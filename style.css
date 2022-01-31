@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* ### Primary */
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+
+  /* ### Neutral */
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 0%, 98%);
+}
+html {
+  font-size: 15px;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.top-text {
+  margin: 50px 0;
+  text-align: center;
+}
+.title {
+  color: var(--very-dark-blue);
+  font-weight: 200;
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+}
+.heading {
+  color: var(--very-dark-blue);
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+.description {
+  color: var(--grayish-blue);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.7;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.container-box {
+  display: flex;
+  max-width: 1100px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  column-gap: 2rem;
+}
+.container-box .box {
+  background-color: #fff;
+  max-width: 350px;
+  height: 250px;
+  margin-top: 20px;
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 18px 3px rgba(0, 0, 0, 0.13);
+  padding: 2rem;
+  position: relative;
+}
+.container-box .box h3 {
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+.container-box .box p {
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  line-height: 1.85;
+  color: var(--grayish-blue);
+}
+.container-box .box img {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 2rem;
+}
+.container-box .box-cyan {
+  border-top: 4px solid var(--cyan);
+}
+.container-box .box-red {
+  border-top: 4px solid var(--red);
+}
+.container-box .box-orange {
+  border-top: 4px solid var(--orange);
+}
+.container-box .box-blue {
+  border-top: 4px solid var(--blue);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/*! ========BREAKING POINTS========== */
+@media screen and (max-width: 377px) {
+  .container-box {
+    max-width: 250px !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container-box {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .container-box {
+    max-width: 1000px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .container-box {
+    max-width: 900px;
+  }
+}
