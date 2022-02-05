@@ -67,7 +67,7 @@ html {
   height: 250px;
   margin-top: 20px;
   border-radius: 0.5rem;
-  box-shadow: 0 8px 18px 3px rgba(0, 0, 0, 0.13);
+  box-shadow: 0 5px 5px 3px rgba(121, 165, 246, 0.144);
   padding: 2rem;
   position: relative;
 }
